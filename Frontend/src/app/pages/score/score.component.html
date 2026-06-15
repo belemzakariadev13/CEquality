@@ -45,7 +45,7 @@
                 <span class="font-label-md text-label-md text-on-surface-variant mt-1">{{ score ? (score.score >= 700 ? 'ÉVALUATION : BON' : score.score >= 650 ? 'ÉVALUATION : MOYEN' : 'ÉVALUATION : FAIBLE') : 'Chargement...' }}</span>
               </div>
             </div>
-            <p class="text-2xl text-on-surface-variant mb-lg">Capacité d'emprunt estimée : <strong class="text-on-surface text-3xl block mt-2">{{ score?.capacite_emprunt | number:'1.0-0':'fr-FR' }} FCFA</strong></p>
+            <p class="text-2xl text-on-surface-variant mb-lg">Capacité d'emprunt estimée : <strong class="text-on-surface text-3xl block mt-2">{{ score?.capacite_emprunt | number:'1.0-0' }} FCFA</strong></p>
             <div class="w-full flex flex-col gap-sm">
               <button class="bg-wave-orange text-white font-title-lg text-title-lg py-sm px-lg rounded-lg flex items-center justify-center gap-xs hover:bg-opacity-90 transition-opacity">Obtenir un prêt</button>
               <button (click)="downloadReport()" class="bg-[#10B981] text-white font-title-lg text-title-lg py-sm px-lg rounded-lg flex items-center justify-center gap-xs hover:bg-opacity-90 transition-opacity">

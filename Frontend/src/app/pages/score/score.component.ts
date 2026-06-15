@@ -113,6 +113,31 @@ export class ScoreComponent implements OnInit {
     return `${daily.toFixed(1)} trans./jour`;
   }
 
+  get regularityScore(): number {
+    if (!this.score) { return 0; }
+    return Math.max(0, Math.min(100, 100 - Math.round(this.score.regularite_revenus * 100)));
+  }
+
+  get savingScore(): number {
+    if (!this.score) { return 0; }
+    return Math.max(0, Math.min(100, Math.round(this.score.ratio_epargne * 100)));
+  }
+
+  get expenseControlScore(): number {
+    if (!this.score) { return 0; }
+    return Math.max(0, Math.min(100, Math.round(this.score.score_depenses * 100)));
+  }
+
+  get retentionScore(): number {
+    if (!this.score) { return 0; }
+    return Math.max(0, Math.min(100, Math.round(this.score.duree_retention_moyenne * 2)));
+  }
+
+  get activityScore(): number {
+    if (!this.score) { return 0; }
+    return Math.max(0, Math.min(100, Math.round(Math.min(this.score.freq_transactions_mois, 30) / 30 * 100)));
+  }
+
   getBadgeStatus(type: 'income' | 'regularity' | 'savings' | 'frequency'): string {
     if (!this.score) { return ''; }
 

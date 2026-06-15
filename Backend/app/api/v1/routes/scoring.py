@@ -37,7 +37,9 @@ async def get_score(user_id: str):
         regularite_revenus=features.get('regularite_revenus', 0.0),
         ratio_epargne=features.get('ratio_epargne', 0.0),
         freq_transactions_mois=features.get('freq_transactions_mois', 0.0),
-        capacite_emprunt=cap_emp
+        capacite_emprunt=cap_emp,
+        score_depenses=features.get('score_depenses', 0.0),
+        duree_retention_moyenne=features.get('duree_retention_moyenne', 0.0)
     )
 
 def _determine_risk(score: int) -> str:

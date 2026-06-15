@@ -22,6 +22,8 @@ export interface ScoreResult {
   ratio_epargne: number;
   freq_transactions_mois: number;
   capacite_emprunt: number;
+  score_depenses: number;
+  duree_retention_moyenne: number;
 }
 
 @Injectable({

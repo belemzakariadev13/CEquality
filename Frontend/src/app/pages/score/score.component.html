@@ -104,50 +104,50 @@
               <div>
                 <div class="flex justify-between mb-1">
                   <span class="font-body-sm text-body-sm text-on-surface-variant">Régularité des revenus</span>
-                  <span class="font-body-sm text-body-sm font-semibold text-on-surface">85/100</span>
+                  <span class="font-body-sm text-body-sm font-semibold text-on-surface">{{ regularityScore }}/100</span>
                 </div>
                 <div class="w-full bg-surface-variant rounded-full h-2">
-                  <div class="bg-[#10B981] h-2 rounded-full" style="width: 85%"></div>
+                  <div class="bg-[#10B981] h-2 rounded-full" [style.width.%]="regularityScore"></div>
                 </div>
               </div>
 
               <div>
                 <div class="flex justify-between mb-1">
                   <span class="font-body-sm text-body-sm text-on-surface-variant">Capacité d'épargne</span>
-                  <span class="font-body-sm text-body-sm font-semibold text-on-surface">72/100</span>
+                  <span class="font-body-sm text-body-sm font-semibold text-on-surface">{{ savingScore }}/100</span>
                 </div>
                 <div class="w-full bg-surface-variant rounded-full h-2">
-                  <div class="bg-[#F59E0B] h-2 rounded-full" style="width: 72%"></div>
+                  <div class="bg-[#F59E0B] h-2 rounded-full" [style.width.%]="savingScore"></div>
                 </div>
               </div>
 
               <div>
                 <div class="flex justify-between mb-1">
                   <span class="font-body-sm text-body-sm text-on-surface-variant">Maîtrise des dépenses</span>
-                  <span class="font-body-sm text-body-sm font-semibold text-on-surface">68/100</span>
+                  <span class="font-body-sm text-body-sm font-semibold text-on-surface">{{ expenseControlScore }}/100</span>
                 </div>
                 <div class="w-full bg-surface-variant rounded-full h-2">
-                  <div class="bg-[#F59E0B] h-2 rounded-full" style="width: 68%"></div>
+                  <div class="bg-[#F59E0B] h-2 rounded-full" [style.width.%]="expenseControlScore"></div>
                 </div>
               </div>
 
               <div>
                 <div class="flex justify-between mb-1">
                   <span class="font-body-sm text-body-sm text-on-surface-variant">Rétention des fonds</span>
-                  <span class="font-body-sm text-body-sm font-semibold text-on-surface">90/100</span>
+                  <span class="font-body-sm text-body-sm font-semibold text-on-surface">{{ retentionScore }}/100</span>
                 </div>
                 <div class="w-full bg-surface-variant rounded-full h-2">
-                  <div class="bg-[#10B981] h-2 rounded-full" style="width: 90%"></div>
+                  <div class="bg-[#10B981] h-2 rounded-full" [style.width.%]="retentionScore"></div>
                 </div>
               </div>
 
               <div>
                 <div class="flex justify-between mb-1">
                   <span class="font-body-sm text-body-sm text-on-surface-variant">Fréquence d'activité</span>
-                  <span class="font-body-sm text-body-sm font-semibold text-on-surface">78/100</span>
+                  <span class="font-body-sm text-body-sm font-semibold text-on-surface">{{ activityScore }}/100</span>
                 </div>
                 <div class="w-full bg-surface-variant rounded-full h-2">
-                  <div class="bg-[#10B981] h-2 rounded-full" style="width: 78%"></div>
+                  <div class="bg-[#10B981] h-2 rounded-full" [style.width.%]="activityScore"></div>
                 </div>
               </div>
             </div>

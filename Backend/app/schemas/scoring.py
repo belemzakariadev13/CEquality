@@ -10,3 +10,5 @@ class ScoreResult(BaseModel):
     ratio_epargne: float
     freq_transactions_mois: float
     capacite_emprunt: float
+    score_depenses: float
+    duree_retention_moyenne: float
